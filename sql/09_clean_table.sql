@@ -18,3 +18,9 @@ WHERE row_status = 'VALID';
 
 CREATE INDEX idx_clean_customer ON clean_retail(customer_id);
 CREATE INDEX idx_clean_date ON clean_retail(order_date);
+
+DROP TABLE IF EXISTS unassigned_retail;
+CREATE TABLE unassigned_retail AS
+SELECT *, ROUND(Quantity * UnitPrice, 2) AS revenue
+FROM retail_flagged
+WHERE row_status = 'NO_CUSTOMER';
