@@ -10,4 +10,6 @@
 
 - **R2 Dates.** InvoiceDate (text, M/D/YYYY H:MM) converted to ISO format as `invoice_ts`. Why: text dates sort and group wrongly.
 
+- **R3 Row status.** Every row gets one status; the first match wins: RETURN, NON_PRODUCT, BAD_PRICE_QTY, NO_CUSTOMER, VALID. Why: no row is removed silently, and every removal has a reason.
+
 ## Decisions
