@@ -47,3 +47,9 @@ Flow: Problem → Question → Analysis → Action. This file covers the first t
 | Retained in month N | Customer places an order N calendar months after their cohort month |
 | Repeat customer | A customer with 2 or more orders |
 | Churn | To be defined on Day 6 |
+
+## 5. Scope and Baseline
+- **Population:** customers with a CustomerID.
+- **Period:** 1 Dec 2010 to 9 Dec 2011.
+- **Time grain:** month.
+- **Baseline:** the average retention across all cohorts. A cohort is "strong" or "weak" relative to this average.
