@@ -29,3 +29,8 @@ SELECT *,
         ELSE 'VALID'
     END AS row_status
 FROM retail_dated;
+
+SELECT row_status, COUNT(*) AS rows_n
+FROM retail_flagged
+GROUP BY row_status
+ORDER BY rows_n DESC;
