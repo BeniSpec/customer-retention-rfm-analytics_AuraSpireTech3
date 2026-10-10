@@ -17,3 +17,15 @@ SELECT InvoiceNo, StockCode, Quantity, UnitPrice, CustomerID,
     END AS row_status
 FROM retail_dated
 LIMIT 20;
+
+DROP TABLE IF EXISTS retail_flagged;
+CREATE TABLE retail_flagged AS
+SELECT *,
+    CASE
+        WHEN InvoiceNo LIKE 'C%'                               THEN 'RETURN'
+        WHEN StockCode NOT GLOB '[0-9]*'                       THEN 'NON_PRODUCT'
+        WHEN UnitPrice <= 0 OR Quantity <= 0                   THEN 'BAD_PRICE_QTY'
+        WHEN CustomerID IS NULL OR TRIM(CustomerID) = ''       THEN 'NO_CUSTOMER'
+        ELSE 'VALID'
+    END AS row_status
+FROM retail_dated;
