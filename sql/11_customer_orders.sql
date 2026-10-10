@@ -11,3 +11,6 @@ SELECT
     ROUND(SUM(revenue), 2)   AS order_revenue
 FROM clean_retail
 GROUP BY customer_id, invoice_no;
+
+SELECT COUNT(*) AS orders, COUNT(DISTINCT invoice_no) AS distinct_invoices
+FROM customer_orders;
