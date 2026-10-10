@@ -26,3 +26,8 @@ Flow: Problem → Question → Analysis → Action. This file covers the first t
 - **Who / when:** repeat customers, from first order to second order.
 - **Metric:** median and spread of days between order 1 and order 2.
 - **Decision:** when to send a follow-up message or offer.
+
+### Q4. Which customers are high-value, frequent, or at risk of churning?
+- **Who:** every customer with an ID.
+- **Metric:** RFM: Recency (days since last order), Frequency (number of orders), Monetary (total spend).
+- **Decision:** who gets retention effort first.
