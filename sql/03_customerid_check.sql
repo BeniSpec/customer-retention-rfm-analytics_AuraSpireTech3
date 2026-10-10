@@ -6,3 +6,8 @@ SELECT
     ROUND(100.0 * COUNT(*) / (SELECT COUNT(*) FROM staging_online_retail), 2) AS pct_of_rows
 FROM staging_online_retail
 WHERE CustomerID IS NULL OR TRIM(CustomerID) = '';
+
+-- How many different customers exist?
+SELECT COUNT(DISTINCT CustomerID) AS distinct_customers
+FROM staging_online_retail
+WHERE CustomerID IS NOT NULL AND TRIM(CustomerID) <> '';
