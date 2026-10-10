@@ -22,3 +22,7 @@ SELECT InvoiceNo, StockCode, Description, Quantity, UnitPrice, CustomerID, Count
        printf('%s-%02d-%02d %02d:%02d:00', y, m, d,
               substr(t,1,instr(t,':')-1), substr(t,instr(t,':')+1)) AS invoice_ts
 FROM c;
+
+-- Validate: range, then count of badly formed timestamps (expect 0)
+SELECT MIN(invoice_ts), MAX(invoice_ts) FROM retail_dated;
+SELECT COUNT(*) AS bad_timestamps FROM retail_dated WHERE length(invoice_ts) <> 19;
