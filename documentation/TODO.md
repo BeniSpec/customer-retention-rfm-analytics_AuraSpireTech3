@@ -15,7 +15,7 @@
 - [x] Returns table
 - [x] Clean table
 - [x] Validation checks
-- [x] Customer tables 
+- [x] Customer tables  
 
 ## Day 3: Cohort tables (SQL)
 - [ ] Cohort month per customer
