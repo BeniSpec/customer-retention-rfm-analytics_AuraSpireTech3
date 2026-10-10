@@ -16,3 +16,8 @@ Flow: Problem → Question → Analysis → Action. This file covers the first t
 - **Who / when:** customers whose first order fell between Dec 2010 and Nov 2011.
 - **Metric:** repeat-customer rate = customers with 2+ orders ÷ all customers.
 - **Decision:** is retention or acquisition the bigger opportunity?
+
+### Q2. How does retention change by acquisition cohort?
+- **Who / when:** customers grouped by the month of their first order.
+- **Metric:** % of each cohort that orders again 1, 2, 3 ... months later.
+- **Decision:** which acquisition months bring customers who stay, so promotions can aim at them.
