@@ -23,3 +23,9 @@ Details: [business_questions.md](documentation/business_questions.md)
 
 ## Dataset
 UCI Online Retail, 541,909 transactions, Dec 2010 to Dec 2011. Source: [Kaggle](https://www.kaggle.com/datasets/carrie1/ecommerce-data). See [data_source.md](documentation/data_source.md).
+
+## Data Quality / Cleaning
+The raw table is never edited. Exact duplicates are removed, dates are converted to ISO format, cancellations go to a returns table, non-product lines and invalid prices or quantities are excluded, and rows without a CustomerID are kept apart in `unassigned_retail`. Result: `clean_retail` holds the valid sales rows used for all customer analysis. Rules: [cleaning_rules.md](documentation/cleaning_rules.md).
+
+## Customer Base
+`customer_orders` has one row per order and `customers` has one row per customer (first order month, order count, revenue, repeat flag). These are the starting tables for the cohort and RFM work.
