@@ -15,7 +15,7 @@ GROUP BY customer_id;
 ALTER TABLE customers ADD COLUMN country TEXT;
 UPDATE customers SET country = (
     SELECT MAX(country) FROM clean_retail c WHERE c.customer_id = customers.customer_id
-);
+); 
 
 ALTER TABLE customers ADD COLUMN is_repeat_customer INTEGER;
 UPDATE customers SET is_repeat_customer = CASE WHEN n_orders >= 2 THEN 1 ELSE 0 END;
