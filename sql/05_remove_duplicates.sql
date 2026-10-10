@@ -12,3 +12,6 @@ FROM (
 DROP TABLE IF EXISTS retail_dedup;
 CREATE TABLE retail_dedup AS
 SELECT DISTINCT * FROM staging_online_retail;
+
+-- Step 3: confirm the count
+SELECT COUNT(*) AS dedup_rows FROM retail_dedup;
