@@ -10,3 +10,7 @@ SELECT
 
 -- Check 1b: raw rows (expect 541909)
 SELECT COUNT(*) AS raw_rows FROM staging_online_retail;
+
+-- Check 2: both should be 0
+SELECT COUNT(*) FROM clean_retail WHERE customer_id IS NULL OR customer_id = 0;
+SELECT COUNT(*) FROM clean_retail WHERE quantity * unit_price <= 0;
