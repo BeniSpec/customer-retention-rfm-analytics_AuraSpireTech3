@@ -15,3 +15,6 @@ SELECT
     Country                                   AS country
 FROM retail_flagged
 WHERE row_status = 'VALID';
+
+CREATE INDEX idx_clean_customer ON clean_retail(customer_id);
+CREATE INDEX idx_clean_date ON clean_retail(order_date);
