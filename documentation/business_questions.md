@@ -31,3 +31,8 @@ Flow: Problem → Question → Analysis → Action. This file covers the first t
 - **Who:** every customer with an ID.
 - **Metric:** RFM: Recency (days since last order), Frequency (number of orders), Monetary (total spend).
 - **Decision:** who gets retention effort first.
+
+### Q5. Which segments should receive different retention strategies?
+- **Who:** the RFM segments from Q4 (for example Champions, Loyal, At Risk, Lost).
+- **Metric:** segment size, share of revenue, and repeat rate per segment.
+- **Decision:** which retention action to test first. This analysis shows who is at risk; a controlled A/B test (Project 4) is what shows whether an action works.
