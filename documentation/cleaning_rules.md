@@ -8,4 +8,6 @@
 ## Rules
 - **R1 Duplicates.** Exact duplicate rows removed with SELECT DISTINCT (541,909 rows to about 536,641). Why: duplicates would double-count orders.
 
+- **R2 Dates.** InvoiceDate (text, M/D/YYYY H:MM) converted to ISO format as `invoice_ts`. Why: text dates sort and group wrongly.
+
 ## Decisions
