@@ -53,3 +53,10 @@ Flow: Problem → Question → Analysis → Action. This file covers the first t
 - **Period:** 1 Dec 2010 to 9 Dec 2011.
 - **Time grain:** month.
 - **Baseline:** the average retention across all cohorts. A cohort is "strong" or "weak" relative to this average.
+
+## 6. Risks and What Would Change Our Mind
+- About 25% of rows have no CustomerID, so customer figures cover only part of the sales.
+- December 2011 stops on the 9th, so the newest cohorts cannot be followed for long.
+- Many customers are wholesalers, so a few accounts may dominate the results.
+- Retention patterns show association, not cause.
+- We would change our recommendation if retention differs little between cohorts, or if a handful of wholesalers explain most of the repeat purchases.
