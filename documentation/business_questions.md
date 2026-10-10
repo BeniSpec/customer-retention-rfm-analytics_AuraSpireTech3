@@ -36,3 +36,14 @@ Flow: Problem → Question → Analysis → Action. This file covers the first t
 - **Who:** the RFM segments from Q4 (for example Champions, Loyal, At Risk, Lost).
 - **Metric:** segment size, share of revenue, and repeat rate per segment.
 - **Decision:** which retention action to test first. This analysis shows who is at risk; a controlled A/B test (Project 4) is what shows whether an action works.
+
+## 4. Metric Definitions
+| Term | Definition |
+|---|---|
+| Customer | A distinct, non-blank CustomerID |
+| Order | A distinct InvoiceNo that does not start with "C" |
+| Revenue | Quantity × UnitPrice in GBP (gross, returns excluded) |
+| Cohort month | The month of a customer's first valid order |
+| Retained in month N | Customer places an order N calendar months after their cohort month |
+| Repeat customer | A customer with 2 or more orders |
+| Churn | To be defined on Day 6 |
