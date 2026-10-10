@@ -21,3 +21,8 @@ Flow: Problem → Question → Analysis → Action. This file covers the first t
 - **Who / when:** customers grouped by the month of their first order.
 - **Metric:** % of each cohort that orders again 1, 2, 3 ... months later.
 - **Decision:** which acquisition months bring customers who stay, so promotions can aim at them.
+
+### Q3. How long does it take customers to purchase again?
+- **Who / when:** repeat customers, from first order to second order.
+- **Metric:** median and spread of days between order 1 and order 2.
+- **Decision:** when to send a follow-up message or offer.
