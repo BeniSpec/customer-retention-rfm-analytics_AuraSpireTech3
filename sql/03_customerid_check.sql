@@ -11,3 +11,8 @@ WHERE CustomerID IS NULL OR TRIM(CustomerID) = '';
 SELECT COUNT(DISTINCT CustomerID) AS distinct_customers
 FROM staging_online_retail
 WHERE CustomerID IS NOT NULL AND TRIM(CustomerID) <> '';
+
+-- How many rows are cancellations (InvoiceNo starts with C)?
+SELECT COUNT(*) AS cancellation_rows
+FROM staging_online_retail
+WHERE InvoiceNo LIKE 'C%';
