@@ -7,3 +7,8 @@ FROM (
     GROUP BY InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country
     HAVING COUNT(*) > 1
 );
+
+-- Step 2: keep one copy of every row
+DROP TABLE IF EXISTS retail_dedup;
+CREATE TABLE retail_dedup AS
+SELECT DISTINCT * FROM staging_online_retail;

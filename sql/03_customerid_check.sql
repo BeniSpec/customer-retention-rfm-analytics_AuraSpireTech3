@@ -16,3 +16,8 @@ WHERE CustomerID IS NOT NULL AND TRIM(CustomerID) <> '';
 SELECT COUNT(*) AS cancellation_rows
 FROM staging_online_retail
 WHERE InvoiceNo LIKE 'C%';
+
+-- Results (10 Oct 2026):
+-- 135,080 rows without a customer ID = 24.93% of rows
+-- 4,372 distinct customers
+-- 9,288 cancellation rows
