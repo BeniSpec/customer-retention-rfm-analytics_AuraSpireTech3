@@ -14,3 +14,7 @@ SELECT COUNT(*) AS raw_rows FROM staging_online_retail;
 -- Check 2: both should be 0
 SELECT COUNT(*) FROM clean_retail WHERE customer_id IS NULL OR customer_id = 0;
 SELECT COUNT(*) FROM clean_retail WHERE quantity * unit_price <= 0;
+
+-- Check 3: date range and customer count
+SELECT MIN(order_date), MAX(order_date), COUNT(DISTINCT customer_id) AS customers
+FROM clean_retail;
