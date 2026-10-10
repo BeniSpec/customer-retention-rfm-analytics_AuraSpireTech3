@@ -7,3 +7,12 @@
 - [ ] Day 6 (Oct 15): RFM segments (Python)
 - [ ] Day 7 (Oct 16): Power BI dashboard
 - [ ] Day 8 (Oct 17): README, recommendations, close out
+
+## Day 2: Clean data for customer analysis
+- [ ] Remove duplicates
+- [ ] Convert dates
+- [ ] Flag row status
+- [ ] Returns table
+- [ ] Clean table
+- [ ] Validation checks
+- [ ] Customer tables
