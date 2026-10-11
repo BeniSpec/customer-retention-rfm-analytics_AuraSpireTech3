@@ -1,9 +1,21 @@
-data/
-*.db
-*.sqlite
-.ipynb_checkpoints/
+# Python
 __pycache__/
 *.pyc
-~$*
-Thumbs.db
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# Large or raw data files
+data/raw/*.csv
+data/raw/*.xlsx
+data/processed/*.csv
+
+# Tableau packaged workbooks can get large; keep only if you want it versioned
+# *.twbx
+
+# OS and editor
 .DS_Store
+Thumbs.db
+.vscode/
+*.db
