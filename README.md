@@ -22,3 +22,13 @@ The dataset is the same one used in Project 1 (Retail Sales Performance), but th
 3. Which customers are high-value, frequent, or at risk of churning?
 4. How long does it take customers to purchase again?
 5. Which segments should receive different retention strategies?
+
+## 2. Dataset
+
+- **Source:** UCI Machine Learning Repository, Online Retail dataset
+- **Size:** 541,909 transaction lines
+- **Period:** December 2010 to December 2011
+- **Business:** a UK-based online gift and homeware retailer
+- **Columns (8):** InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country
+
+Full column descriptions are in documentation/data_dictionary.md.
