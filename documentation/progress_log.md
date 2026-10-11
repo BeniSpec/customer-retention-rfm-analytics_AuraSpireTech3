@@ -10,3 +10,8 @@
 - Customers in customer_base: ___
 
 **Tomorrow (Day 2):** first purchase date and cohort assignment in SQL.
+
+## Day 2
+**Done:** cohort assignment, cohort sizes, active-months table, month_index, headline one-and-done vs repeat question.
+
+**Tomorrow (Day 3):** retention matrix by cohort and month_index, repurchase gap.
