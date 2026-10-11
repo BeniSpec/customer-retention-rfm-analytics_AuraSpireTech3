@@ -19,3 +19,5 @@ The marketing team of an online retailer.
 ## Out of scope
 - Predicting future sales or building a churn model.
 - Product-level analysis (covered in Project 1).
+
+_Note: this reuses the same raw file as Project 1 (Retail Sales Performance), since both projects draw their questions from the same underlying transactions._
