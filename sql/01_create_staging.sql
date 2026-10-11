@@ -1,6 +1,3 @@
--- Raw transactions exactly as exported. invoice_date stays as the original
--- UK-format text (DD/MM/YYYY HH:MM); it's parsed once, in
--- sql/05_clean_transactions.sql, using Postgres's to_timestamp().
 DROP TABLE IF EXISTS raw_transactions;
 
 CREATE TABLE raw_transactions (
