@@ -1,17 +1,29 @@
--- 05_remove_duplicates.sql
--- Step 1: how many rows are exact copies of another row?
-SELECT COUNT(*) AS duplicate_groups, SUM(n - 1) AS extra_rows
-FROM (
-    SELECT COUNT(*) AS n
-    FROM staging_online_retail
-    GROUP BY InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country
-    HAVING COUNT(*) > 1
-);
+-- Cleaning rules and why:
+-- 1. customer_id must exist: we cannot follow a customer over time without it.
+-- 2. quantity > 0 and unit_price > 0: removes returns, adjustments and free items.
+-- 3. invoice_no not starting with 'C': removes cancellations.
+-- 4. non-product codes removed: postage, fees and manual entries are not purchases.
+--
+-- Date parsing: to_timestamp() reads the UK format 'DD/MM/YYYY HH24:MI'
+-- directly, whether or not the day/month/hour is zero-padded, and returns
+-- a real timestamp -- no string-splicing needed.
+DROP VIEW IF EXISTS clean_transactions;
 
--- Step 2: keep one copy of every row
-DROP TABLE IF EXISTS retail_dedup;
-CREATE TABLE retail_dedup AS
-SELECT DISTINCT * FROM staging_online_retail;
-
--- Step 3: confirm the count
-SELECT COUNT(*) AS dedup_rows FROM retail_dedup;
+CREATE VIEW clean_transactions AS
+SELECT
+    invoice_no,
+    stock_code,
+    description,
+    quantity,
+    to_timestamp(invoice_date, 'DD/MM/YYYY HH24:MI') AS invoice_date,
+    unit_price,
+    customer_id,
+    country,
+    quantity * unit_price AS line_revenue,
+    to_char(to_timestamp(invoice_date, 'DD/MM/YYYY HH24:MI'), 'YYYY-MM') AS invoice_month
+FROM raw_transactions
+WHERE customer_id IS NOT NULL
+  AND quantity > 0
+  AND unit_price > 0
+  AND invoice_no NOT LIKE 'C%'
+  AND stock_code NOT IN ('POST','D','M','BANK CHARGES','DOT','CRUK');
