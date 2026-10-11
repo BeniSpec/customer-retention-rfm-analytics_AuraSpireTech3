@@ -32,3 +32,15 @@ The dataset is the same one used in Project 1 (Retail Sales Performance), but th
 - **Columns (8):** InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country
 
 Full column descriptions are in documentation/data_dictionary.md.
+
+## 3. Data quality and cleaning
+_In progress. Cleaning rules and date parsing are written in sql/05_clean_transactions.sql._
+
+## 4. Analytical methodology
+_In progress._
+
+## 5. SQL analysis
+_In progress._
+
+## 6. Python analysis (cohorts, RFM, retention curves)
+_In progress._
