@@ -14,3 +14,11 @@ Marketing says: "We are acquiring customers, but we don't know whether they are 
 This project answers that question with real transaction data from a UK-based online retailer. The goal is not a dashboard — the goal is a clear recommendation: who comes back, who is slipping away, and what the business should do differently for each group.
 
 The dataset is the same one used in Project 1 (Retail Sales Performance), but the stakeholder question is different.
+
+### Key questions
+
+1. Are customers returning after their first purchase?
+2. How does retention change by acquisition cohort?
+3. Which customers are high-value, frequent, or at risk of churning?
+4. How long does it take customers to purchase again?
+5. Which segments should receive different retention strategies?
