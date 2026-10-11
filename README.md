@@ -6,3 +6,11 @@ Part of the AuraSpire Tech data analyst portfolio.
 
 **Tools:** Excel, SQL (PostgreSQL), Python (Pandas, NumPy, Matplotlib), Tableau, Git/GitHub
 **Status:** In progress (Day 1 of 6)
+
+## 1. Business problem
+
+Marketing says: "We are acquiring customers, but we don't know whether they are returning. Which customers should we focus on retaining?"
+
+This project answers that question with real transaction data from a UK-based online retailer. The goal is not a dashboard — the goal is a clear recommendation: who comes back, who is slipping away, and what the business should do differently for each group.
+
+The dataset is the same one used in Project 1 (Retail Sales Performance), but the stakeholder question is different.
