@@ -1,4 +1,3 @@
-```sql
 DROP TABLE IF EXISTS customer_base;
 
 CREATE TABLE customer_base AS
@@ -21,4 +20,3 @@ LIMIT 10;
 -- Check total customers
 SELECT COUNT(*) AS total_customers
 FROM customer_base;
-```
