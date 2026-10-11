@@ -44,3 +44,12 @@ _In progress._
 
 ## 6. Python analysis (cohorts, RFM, retention curves)
 _In progress._
+
+## 7. Dashboard and report
+_To be completed on Day 5 (Tableau)._
+
+## 8. Key findings
+_To be completed on Day 6._
+
+## 9. Business recommendations
+_To be completed on Day 6._
