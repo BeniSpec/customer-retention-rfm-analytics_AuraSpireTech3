@@ -53,3 +53,12 @@ _To be completed on Day 6._
 
 ## 9. Business recommendations
 _To be completed on Day 6._
+
+## 10. Limitations and assumptions
+
+- Customers are tracked by CustomerID. Rows without one cannot be followed over time, so they are left out of retention and RFM.
+- The data covers about 13 months and ends in early December 2011. The last month is incomplete, so it is excluded from the retention curves.
+- With one year of data we cannot see yearly buying patterns or long-term lifetime value.
+- A few large wholesale customers may distort revenue averages.
+- A few customers appear under more than one country; one country per customer is used.
+- Cancelled invoices are removed, not netted against the original orders.
