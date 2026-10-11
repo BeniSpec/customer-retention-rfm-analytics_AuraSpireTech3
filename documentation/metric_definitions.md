@@ -10,3 +10,10 @@
 | At-risk window (proposed) | No purchase in the last 90 days, measured from the day after the last date in the data |
 
 Note: the last month in the data is incomplete and excluded from retention curves.
+
+## Cohort logic
+
+- Cohort: the calendar month of a customer's first valid purchase.
+- Month index: 0 is the cohort month, 1 is the following month, and so on.
+- Cohort size: number of customers whose first valid purchase falls in that month.
+- A customer is "retained in month n" if they have at least one valid order in the month that is n months after their cohort month.
