@@ -17,3 +17,11 @@ Note: the last month in the data is incomplete and excluded from retention curve
 - Month index: 0 is the cohort month, 1 is the following month, and so on.
 - Cohort size: number of customers whose first valid purchase falls in that month.
 - A customer is "retained in month n" if they have at least one valid order in the month that is n months after their cohort month.
+
+## RFM (planned)
+
+- Recency (R): days since the customer's last valid purchase, measured from the day after the last date in the data.
+- Frequency (F): number of distinct valid invoices.
+- Monetary (M): total revenue from valid orders.
+
+Scoring plan: split each of R, F and M into 5 groups (1 to 5) using quintiles in Python. Combine scores into named segments (Champions, Loyal, Potential Loyalists, New Customers, At Risk, Hibernating).
