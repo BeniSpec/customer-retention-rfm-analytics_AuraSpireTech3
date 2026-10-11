@@ -62,3 +62,11 @@ _To be completed on Day 6._
 - A few large wholesale customers may distort revenue averages.
 - A few customers appear under more than one country; one country per customer is used.
 - Cancelled invoices are removed, not netted against the original orders.
+
+## 11. How to reproduce
+
+1. Download the dataset from the UCI Machine Learning Repository (link in data/README.md).
+2. Save it as data/raw/online_retail.csv, untouched.
+3. Open sql/ scripts in pgAdmin's Query Tool against the retention_rfm database, in numeric order.
+4. Open the notebooks in python/ in Google Colab, in order, using CSVs exported from Postgres.
+5. Open the Tableau workbook in tableau/ and point it at the exported CSVs.
