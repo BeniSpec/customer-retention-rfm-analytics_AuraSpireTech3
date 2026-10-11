@@ -1,9 +1,10 @@
--- 02_row_count_check.sql
--- Expect 541909 rows
-SELECT COUNT(*) AS total_rows FROM staging_online_retail;
-
--- Preview the first rows and confirm Quantity / UnitPrice are numeric
-SELECT * FROM staging_online_retail LIMIT 10;
-SELECT typeof(Quantity), typeof(UnitPrice), COUNT(*)
-FROM staging_online_retail
-GROUP BY 1, 2;
+-- Load data/raw/online_retail.csv into raw_transactions using pgAdmin's
+-- Import/Export Data feature:
+-- 1. In the left tree: retention_rfm > Schemas > public > Tables >
+--    right-click raw_transactions > Import/Export Data...
+-- 2. Set the toggle at top to "Import".
+-- 3. Filename: browse to data/raw/online_retail.csv
+-- 4. Format: csv
+-- 5. Header: toggle ON (Yes)
+-- 6. Delimiter: , (comma)
+-- 7. Click OK, then Restore/OK on the progress dialog.
