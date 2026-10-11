@@ -1,36 +1,13 @@
--- 07_flag_row_status.sql
--- How are missing customer IDs stored?
-SELECT
-    SUM(CASE WHEN CustomerID IS NULL THEN 1 ELSE 0 END)       AS null_ids,
-    SUM(CASE WHEN TRIM(CustomerID) = '' THEN 1 ELSE 0 END)    AS blank_ids,
-    SUM(CASE WHEN CustomerID LIKE '%.0' THEN 1 ELSE 0 END)    AS ids_ending_dot_zero
-FROM retail_dated;
+SELECT COUNT(*) AS customers_in_base,
+       (SELECT COUNT(DISTINCT customer_id) FROM clean_transactions) AS customers_in_view
+FROM customer_base;
 
--- Preview the status logic on 20 rows
-SELECT InvoiceNo, StockCode, Quantity, UnitPrice, CustomerID,
-    CASE
-        WHEN InvoiceNo LIKE 'C%'                               THEN 'RETURN'
-        WHEN StockCode NOT GLOB '[0-9]*'                       THEN 'NON_PRODUCT'
-        WHEN UnitPrice <= 0 OR Quantity <= 0                   THEN 'BAD_PRICE_QTY'
-        WHEN CustomerID IS NULL OR TRIM(CustomerID) = ''       THEN 'NO_CUSTOMER'
-        ELSE 'VALID'
-    END AS row_status
-FROM retail_dated
-LIMIT 20;
+SELECT ROUND(SUM(total_revenue), 2) AS base_revenue,
+       (SELECT ROUND(SUM(line_revenue), 2) FROM clean_transactions) AS view_revenue
+FROM customer_base;
 
-DROP TABLE IF EXISTS retail_flagged;
-CREATE TABLE retail_flagged AS
-SELECT *,
-    CASE
-        WHEN InvoiceNo LIKE 'C%'                               THEN 'RETURN'
-        WHEN StockCode NOT GLOB '[0-9]*'                       THEN 'NON_PRODUCT'
-        WHEN UnitPrice <= 0 OR Quantity <= 0                   THEN 'BAD_PRICE_QTY'
-        WHEN CustomerID IS NULL OR TRIM(CustomerID) = ''       THEN 'NO_CUSTOMER'
-        ELSE 'VALID'
-    END AS row_status
-FROM retail_dated;
+SELECT MIN(first_invoice_date) AS earliest_date, MAX(last_invoice_date) AS latest_date
+FROM customer_base;
 
-SELECT row_status, COUNT(*) AS rows_n
-FROM retail_flagged
-GROUP BY row_status
-ORDER BY rows_n DESC;
+SELECT COUNT(*) AS bad_dates FROM customer_base WHERE first_invoice_date > last_invoice_date;
+SELECT COUNT(*) AS no_orders FROM customer_base WHERE order_count < 1;
