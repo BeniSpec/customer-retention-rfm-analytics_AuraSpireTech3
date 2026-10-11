@@ -37,7 +37,11 @@ Full column descriptions are in documentation/data_dictionary.md.
 _In progress. Cleaning rules and date parsing are written in sql/05_clean_transactions.sql._
 
 ## 4. Analytical methodology
-_In progress._
+Cohort analysis, entirely in SQL (PostgreSQL):
+1. Each customer gets a **cohort month** — the month of their first valid purchase (sql/08).
+2. Cohort sizes are counted per month (sql/10).
+3. Every month a customer was actually active is recorded (sql/12).
+4. Each active month becomes a **month_index** relative to the cohort month, via whole-month arithmetic (sql/14).
 
 ## 5. SQL analysis
 _In progress._
