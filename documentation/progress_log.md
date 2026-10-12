@@ -15,8 +15,3 @@
 **Done:** cohort assignment, cohort sizes, active-months table, month_index, headline one-and-done vs repeat question.
 
 **Tomorrow (Day 3):** retention matrix by cohort and month_index, repurchase gap.
-
-## Day 3
-**Done:** retention matrix by cohort/month_index, repurchase gap and its distribution.
-
-**Tomorrow (Day 4):** RFM scoring and retention curve chart, in Python.

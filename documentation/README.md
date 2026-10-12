@@ -11,7 +11,7 @@ Planning and definition documents for this project.
 
 - [x] Day 1: setup, documentation, data load, cleaning, customer table
 - [x] Day 2: first purchase and cohorts (SQL)
-- [ ] Day 3: retention matrix and repurchase gap (SQL)
+- [x] Day 3: retention matrix and repurchase gap (SQL)
 - [ ] Day 4: RFM and retention curves (Python)
 - [ ] Day 5: Tableau dashboard
 - [ ] Day 6: findings, recommendations, final README
