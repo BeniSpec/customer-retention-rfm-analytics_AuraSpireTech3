@@ -43,6 +43,11 @@ Cohort analysis, entirely in SQL (PostgreSQL):
 3. Every month a customer was actually active is recorded (sql/12).
 4. Each active month becomes a **month_index** relative to the cohort month, via whole-month arithmetic (sql/14).
 
+## Day 3 addition: retention and repurchase
+
+- **retention_matrix**: for every (cohort_month, month_index) pair, what % of that cohort was still active.
+- **repurchase_gap**: for customers who came back, how many days between their 1st and 2nd purchase.
+
 ## 5. SQL analysis
 _In progress._
 
