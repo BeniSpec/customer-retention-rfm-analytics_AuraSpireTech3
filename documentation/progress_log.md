@@ -32,3 +32,9 @@
 - Built RFM scoring and segmentation from customer_base.csv
 - Exported rfm_segments.csv for use in Day 5 Tableau dashboard
 - Documented methodology in documentation/day4_notes.md
+
+## Day 5 — Tableau Dashboard (Final Day)
+- Built retention_rfm_dashboard.twbx with 3 sheets: Retention Curve, RFM Segments, Customer Behaviour Trends
+- Combined into one Overview Dashboard
+- Documented in README section 7 and day5_notes.md
+- Project complete: Days 1–5 finished, Day 6 intentionally not included
