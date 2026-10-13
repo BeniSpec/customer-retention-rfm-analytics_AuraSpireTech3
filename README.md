@@ -47,6 +47,8 @@ Cohort analysis, entirely in SQL (PostgreSQL):
 
 - **retention_matrix**: for every (cohort_month, month_index) pair, what % of that cohort was still active.
 - **repurchase_gap**: for customers who came back, how many days between their 1st and 2nd purchase.
+### Retention matrix and repurchase gap (Day 3)
+`retention_matrix` cross-tabulates cohort_month against month_index to show the % of each cohort still buying in each subsequent month. `repurchase_gap` measures the days between a repeat customer's consecutive orders, bucketed to show how quickly customers typically return.
 
 ## 5. SQL analysis
 _In progress._

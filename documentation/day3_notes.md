@@ -1,11 +1,20 @@
-# Day 3 notes — retention matrix & repurchase gap
+# Day 3 — Retention Matrix & Repurchase Gap Notes
+
+## Business questions
+1. How does retention decay over time for each monthly cohort — what % of customers are still buying in month 1, month 2, and so on?
+2. How long does it typically take a repeat customer to come back and buy again?
 
 ## What was built
-- retention_matrix: cohort x month_index retention percentages
-- repurchase_gap: days between 1st and 2nd purchase, for returning customers only
-- Bucketed distribution (0-7, 8-30, 31-90, 90+ days) for a marketing timing recommendation
+- `retention_matrix` — a cohort_month × month_index grid showing the % of each cohort still active in each month after their first purchase.
+- `repurchase_gap` — the number of days between a repeat customer's first and second order (and subsequent orders), used to measure typical time-to-repurchase.
+- `repurchase_gap_summary` — the same gap data bucketed into 0–7, 8–30, 31–90, and 90+ day groups, plus overall min/average/median/max.
 
-## Numbers to fill in
-- Median days to repurchase: ___
-- % of repeat customers who returned within 30 days: ___
-- Best-retaining cohort month at month_index=3: ___
+## Confirmed numbers
+- Retention matrix: 91 cohort/month_index rows built, fully validated (month 0 always 100%, no row exceeds 100%).
+- Repeat customers: 2,829 (65.3% of base), generating £8,132,096.98 (92.8% of revenue).
+- One-and-done customers: 1,505 (34.7% of base), generating £628,969.67 (7.2% of revenue).
+- Repurchase gap: 0 negative gaps (no bad data), min 0 days, average 76.7 days, median 51 days, max 365 days.
+- Gap buckets: 0–7 days = 424 customers, 8–30 days = 534, 31–90 days = 962, 90+ days = 909.
+
+## Headline finding
+A third of customers never return after their first order, but the two-thirds who do generate nearly all the revenue — and half of those repeat customers come back within about 7 weeks, though a long tail takes up to a year.

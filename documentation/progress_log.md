@@ -19,3 +19,10 @@
 **Done:** cohort assignment, cohort sizes, active-months table, month_index, headline one-and-done vs repeat question.
 
 **Tomorrow (Day 3):** retention matrix by cohort and month_index, repurchase gap.
+
+## Day 3 — Retention Matrix & Repurchase Gap
+- Built and validated retention_matrix (91 rows, month 0 = 100%, no rate exceeds 100%)
+- Confirmed: 2,829 repeat customers (65.3%, 92.8% of revenue) vs 1,505 one-and-done (34.7%, 7.2% of revenue)
+- Built and validated repurchase_gap and repurchase_gap_summary
+- Confirmed: avg gap 76.7 days, median 51 days, max 365 days, 0 negative gaps
+- Documented in documentation/day3_notes.md
