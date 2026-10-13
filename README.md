@@ -57,7 +57,16 @@ _In progress._
 _In progress._
 
 ## 7. Dashboard and report
-_To be completed on Day 5 (Tableau)._
+
+The final deliverable is a single Tableau dashboard, `tableau/retention_rfm_dashboard.twbx`, combining three views:
+
+1. **Retention Curve** — % of each monthly cohort still purchasing in each month after their first order, one line per cohort. Shows how quickly and how hard customer retention drops off.
+2. **Revenue by RFM Segment** — total revenue contributed by each customer segment (Champions, Loyal, Potential Loyalists, New Customers, At Risk, Hibernating), sorted highest to lowest. Shows where revenue is concentrated.
+3. **Customer Recency vs Frequency by Segment** — a scatter plot of all customers, positioned by how recently and how often they buy, colored by segment and sized by spend. Shows the behavioural shape of each segment at a glance.
+
+Data sources: `data/processed/retention_matrix.csv` and `data/processed/rfm_segments.csv`, both exported from the project's Postgres database (see `sql/`).
+
+To view: open the `.twbx` file in Tableau Public Desktop (free) or Tableau Desktop — it's a packaged workbook, so no separate data connection setup is needed.
 
 ## 8. Key findings
 _To be completed on Day 6._
