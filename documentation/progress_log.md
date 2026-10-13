@@ -26,3 +26,9 @@
 - Built and validated repurchase_gap and repurchase_gap_summary
 - Confirmed: avg gap 76.7 days, median 51 days, max 365 days, 0 negative gaps
 - Documented in documentation/day3_notes.md
+
+## Day 4 — Python Analysis
+- Built retention curve visualization from retention_matrix.csv
+- Built RFM scoring and segmentation from customer_base.csv
+- Exported rfm_segments.csv for use in Day 5 Tableau dashboard
+- Documented methodology in documentation/day4_notes.md
