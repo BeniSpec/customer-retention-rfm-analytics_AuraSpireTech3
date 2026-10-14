@@ -16,4 +16,4 @@ Beyond knowing retention *rates* (Day 3), who specifically are our best and most
 No install required, works in any browser, and file upload/download replaces a local DB connection — consistent with keeping this project runnable on a basic laptop.
 
 ## Headline finding
-[Fill in after reviewing segment_revenue.png: name which segment(s) hold the majority of revenue, and roughly what % of customers are "At Risk" or "Hibernating."]
+Champions make up a small share of customers but clearly dominate total revenue on the segment-revenue chart, while Hibernating and New Customers contribute the least. This confirms the same pattern seen in Day 3: a small core of engaged, high-value customers accounts for most of the money, while a long tail of low-engagement customers contributes very little.
