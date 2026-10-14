@@ -13,6 +13,9 @@ The retention curve (Day 4) shows the steepest drop happens in month 1 — most 
 **3. Repeat customers drive almost all the revenue.**
 Repeat customers generated £8,132,096.98 (92.8% of total revenue), while one-and-done customers generated only £628,969.67 (7.2%). Retaining customers matters far more than acquiring new ones for this business.
 
+**4. Most repeat customers come back within ~2 months, but a long tail takes up to a year.**
+Median time between purchases: 51 days. Average: 76.7 days (pulled up by slower repeat buyers). Breakdown: 424 customers repurchase within a week, 534 within a month, 962 within 3 months, and 909 take longer than 3 months (up to 365 days).
+
 ## Recommendations
 [to be added]
 
