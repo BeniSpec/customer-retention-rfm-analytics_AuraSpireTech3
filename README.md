@@ -80,7 +80,13 @@ All SQL lives in `sql/`, run in numeric order in pgAdmin's Query Tool against th
 Full file-by-file description in sql/README.md.
 
 ## 6. Python analysis (cohorts, RFM, retention curves)
-_In progress._
+
+Two notebooks (`python/`), run in Google Colab using CSVs exported from Postgres:
+
+- `01_cohort_retention.ipynb` — turns `retention_matrix.csv` into a retention curve chart (one line per cohort).
+- `02_rfm_segmentation.ipynb` — scores every customer on Recency, Frequency and Monetary value, assigns a named segment, and charts total revenue by segment. Outputs `rfm_segments.csv`, used by the Tableau dashboard.
+
+Full methodology in documentation/day4_notes.md.
 
 ## 7. Dashboard and report
 
