@@ -38,3 +38,12 @@
 - Combined into one Overview Dashboard
 - Documented in README section 7 and day5_notes.md
 - Project complete: Days 1–5 finished, Day 6 intentionally not included
+
+## Day 6 — Findings & Recommendations (Project Complete)
+- Fixed Tableau file to proper .twbx packaged format
+- Cleaned up stale SQLite-era documentation (cleaning_rules.md, metric_definitions.md)
+- Removed outdated 8-day TODO.md
+- Filled all remaining placeholders across Day 2, 4, 5 notes
+- Rewrote all README sections (3, 4, 5, 6, 8, 9) with real, confirmed numbers
+- Synthesized findings across Days 1–5 into documentation/day6_findings.md
+- All 6 days complete: setup/cleaning, cohorts, retention matrix, RFM/Python, Tableau dashboard, findings
