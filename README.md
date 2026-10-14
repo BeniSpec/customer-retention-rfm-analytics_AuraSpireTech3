@@ -38,7 +38,15 @@ The dataset is the same one used in Project 1 (Retail Sales Performance), but th
 Full column descriptions are in documentation/data_dictionary.md.
 
 ## 3. Data quality and cleaning
-_In progress. Cleaning rules and date parsing are written in sql/05_clean_transactions.sql._
+
+Starting from 541,909 raw transaction lines, the following rules were applied (full detail in documentation/cleaning_rules.md and sql/05_clean_transactions.sql):
+
+- 135,080 rows removed for missing CustomerID
+- 9,288 cancelled invoices removed
+- Non-positive quantity/price rows removed (returns, adjustments, free items)
+- Non-product stock codes removed (postage, fees, gift cards, manual entries)
+
+Result: 396,337 clean transaction lines, covering 4,334 customers with total revenue of £8,761,066.65, date range 2010-12-01 to 2011-12-09. Validated with 0 bad dates and 0 customers with no orders (sql/07).
 
 ## 4. Analytical methodology
 Cohort analysis, entirely in SQL (PostgreSQL):
