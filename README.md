@@ -69,7 +69,15 @@ RFM segmentation and visualization (Python, Day 4): see section 6.
 `retention_matrix` cross-tabulates cohort_month against month_index to show the % of each cohort still buying in each subsequent month. `repurchase_gap` measures the days between a repeat customer's consecutive orders, bucketed to show how quickly customers typically return.
 
 ## 5. SQL analysis
-_In progress._
+
+All SQL lives in `sql/`, run in numeric order in pgAdmin's Query Tool against the `retention_rfm` database:
+
+- **01–04**: create raw table, load the CSV, validate the load, data quality checks
+- **05–07**: build the clean_transactions view (with native date parsing), build customer_base, validate it
+- **08–16**: cohort assignment, cohort sizes, active months, month_index, one-and-done vs repeat customers
+- **17–21**: retention matrix and repurchase gap analysis
+
+Full file-by-file description in sql/README.md.
 
 ## 6. Python analysis (cohorts, RFM, retention curves)
 _In progress._
