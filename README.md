@@ -49,11 +49,17 @@ Starting from 541,909 raw transaction lines, the following rules were applied (f
 Result: 396,337 clean transaction lines, covering 4,334 customers with total revenue of £8,761,066.65, date range 2010-12-01 to 2011-12-09. Validated with 0 bad dates and 0 customers with no orders (sql/07).
 
 ## 4. Analytical methodology
-Cohort analysis, entirely in SQL (PostgreSQL):
+
+Cohort and retention analysis, entirely in SQL (PostgreSQL):
+
 1. Each customer gets a **cohort month** — the month of their first valid purchase (sql/08).
 2. Cohort sizes are counted per month (sql/10).
 3. Every month a customer was actually active is recorded (sql/12).
 4. Each active month becomes a **month_index** relative to the cohort month, via whole-month arithmetic (sql/14).
+5. A **retention_matrix** cross-tabulates cohort_month against month_index, showing the % of each cohort still active in each subsequent month (sql/17).
+6. A **repurchase_gap** measures the days between a repeat customer's consecutive orders, bucketed to show how quickly customers typically return (sql/19–21).
+
+RFM segmentation and visualization (Python, Day 4): see section 6.
 
 ## Day 3 addition: retention and repurchase
 
