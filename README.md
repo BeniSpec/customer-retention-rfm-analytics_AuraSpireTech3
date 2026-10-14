@@ -4,8 +4,12 @@
 
 Part of the AuraSpire Tech data analyst portfolio.
 
-**Tools:** Excel, SQL (PostgreSQL), Python (Pandas, NumPy, Matplotlib), Tableau, Git/GitHub
-**Status:** In progress (Day 1 of 6)
+**Tools:** PostgreSQL (pgAdmin), Python (Pandas, NumPy, Matplotlib) via Google Colab, Tableau Public, Git/GitHub Desktop
+**Status:** Complete (6 of 6 days)
+
+## Executive Summary
+
+This project analyzes customer retention and purchasing behavior for a UK-based online retailer using cohort analysis, RFM segmentation, and repurchase timing. Of 4,334 customers, 65.3% are repeat buyers generating 92.8% of all revenue, while 34.7% purchase only once. Retention drops sharply in the first month after a customer's initial purchase, and repeat customers typically return within ~51 days (median). Full findings and recommendations are in `documentation/day6_findings.md`.
 
 ## 1. Business problem
 
