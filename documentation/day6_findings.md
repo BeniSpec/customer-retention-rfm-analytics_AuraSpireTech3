@@ -26,4 +26,6 @@ The RFM segmentation (Day 4) shows Champions and Loyal customers hold a dispropo
 4. **Set a realistic repurchase-window expectation** — since the median gap is 51 days, re-engagement emails/offers timed around day 45–60 (rather than immediately or after 90+ days) likely align best with actual customer behavior.
 
 ## Limitations
-[to be added]
+- Data covers a single year (Dec 2010–Dec 2011) for one UK-based retailer — findings may not generalize to other markets, seasons, or longer time horizons.
+- RFM segmentation thresholds (quintile-based) are relative to this dataset only; they would need to be recalibrated on a new or larger dataset.
+- No customer-level demographic or marketing-channel data was available, so recommendations are based on purchase behavior alone.
