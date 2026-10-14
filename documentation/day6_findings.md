@@ -20,7 +20,10 @@ Median time between purchases: 51 days. Average: 76.7 days (pulled up by slower 
 The RFM segmentation (Day 4) shows Champions and Loyal customers hold a disproportionate share of total revenue relative to their numbers, while At Risk and Hibernating segments represent real but currently inactive value.
 
 ## Recommendations
-[to be added]
+1. **Focus retention effort in the first 30–60 days after a customer's first purchase** — this is where the steepest drop-off happens, and where a second-purchase incentive (discount, follow-up email, loyalty signup) would have the most impact.
+2. **Build a win-back campaign targeted at the "At Risk" and "Hibernating" RFM segments** — these are customers with real purchase history who have gone quiet; even a modest reactivation rate would recover meaningful revenue given how concentrated revenue is in repeat buyers.
+3. **Protect and reward the "Champions" segment** — they're a small group driving outsized revenue; losing even a few of them matters more than losing dozens of one-and-done customers.
+4. **Set a realistic repurchase-window expectation** — since the median gap is 51 days, re-engagement emails/offers timed around day 45–60 (rather than immediately or after 90+ days) likely align best with actual customer behavior.
 
 ## Limitations
 [to be added]
