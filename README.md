@@ -108,7 +108,7 @@ To view: open the `.twbx` file in Tableau Public Desktop (free) or Tableau Deskt
 4. The median repurchase gap is 51 days (average 76.7, pulled up by a long tail reaching 365 days).
 5. Revenue is concentrated in a small number of high-value RFM segments (Champions, Loyal), while At Risk and Hibernating segments hold real but currently inactive value.
 
-Full detail in documentation/day6_findings.md.
+Full detail in documentation/day6_findings.md. 
 
 ## 9. Business recommendations
 
