@@ -101,7 +101,14 @@ Data sources: `data/processed/retention_matrix.csv` and `data/processed/rfm_segm
 To view: open the `.twbx` file in Tableau Public Desktop (free) or Tableau Desktop — it's a packaged workbook, so no separate data connection setup is needed.
 
 ## 8. Key findings
-_To be completed on Day 6._
+
+1. Retention drops off sharply after the first purchase — most of each cohort's decline happens in month 1, then flattens out.
+2. 34.7% of customers (1,505) are one-and-done; the remaining 65.3% (2,829) are repeat customers.
+3. Repeat customers generate 92.8% of total revenue (£8,132,096.98) vs 7.2% (£628,969.67) from one-and-done customers.
+4. The median repurchase gap is 51 days (average 76.7, pulled up by a long tail reaching 365 days).
+5. Revenue is concentrated in a small number of high-value RFM segments (Champions, Loyal), while At Risk and Hibernating segments hold real but currently inactive value.
+
+Full detail in documentation/day6_findings.md.
 
 ## 9. Business recommendations
 _To be completed on Day 6._
