@@ -18,10 +18,10 @@ Note: the last month in the data is incomplete and excluded from retention curve
 - Cohort size: number of customers whose first valid purchase falls in that month.
 - A customer is "retained in month n" if they have at least one valid order in the month that is n months after their cohort month.
 
-## RFM (planned)
+## RFM (implemented in Day 4, python/02_rfm_segmentation.ipynb)
 
-- Recency (R): days since the customer's last valid purchase, measured from the day after the last date in the data.
-- Frequency (F): number of distinct valid invoices.
-- Monetary (M): total revenue from valid orders.
+- **Recency (R):** days since the customer's last valid purchase, measured from the day after the latest date in the full dataset. Column: `recency_days`.
+- **Frequency (F):** number of distinct valid invoices. Column: `order_count` (from customer_base).
+- **Monetary (M):** total revenue from valid orders. Column: `total_revenue` (from customer_base).
 
-Scoring plan: split each of R, F and M into 5 groups (1 to 5) using quintiles in Python. Combine scores into named segments (Champions, Loyal, Potential Loyalists, New Customers, At Risk, Hibernating).
+Scoring: each of R, F and M split into 5 groups (1–5) using quintiles (`pd.qcut`) in Python. Recency is scored in reverse (fewer days since last order = score 5, since lower recency is better). The three scores combine into a 3-digit `rfm_score` and map to one of 6 named segments: Champions, Loyal, Potential Loyalists, New Customers, At Risk, Hibernating. Output: `rfm_segments.csv`.
