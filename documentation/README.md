@@ -2,10 +2,13 @@
 
 Planning and definition documents for this project.
 
-- business_question.md — who is asking, what decision it supports
-- metric_definitions.md — how we define active, repeat, retention and churn
-- data_dictionary.md — what each column means
+- business_questions.md — who is asking, what decision it supports
+- cleaning_rules.md — the cleaning rules applied and why
+- data_dictionary.md — what each raw column means, plus derived tables
+- data_source.md — dataset provenance and license
+- metric_definitions.md — how we define active, repeat, retention, churn and RFM
 - progress_log.md — daily log of what was done and learned
+- day2_notes.md through day6_findings.md — per-day methodology notes and final findings
 
 ## Project status
 
@@ -14,4 +17,4 @@ Planning and definition documents for this project.
 - [x] Day 3: retention matrix and repurchase gap (SQL)
 - [x] Day 4: RFM and retention curves (Python)
 - [x] Day 5: Tableau dashboard
-- [ ] Day 6: findings, recommendations, final README
+- [x] Day 6: findings, recommendations, final README
