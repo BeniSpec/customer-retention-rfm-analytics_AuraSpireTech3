@@ -6,8 +6,12 @@ This project analyzed 541,909 transactions from 4,334 customers (UK online retai
 ## Key findings
 **1. Retention drops off sharply after the first purchase.**
 The retention curve (Day 4) shows the steepest drop happens in month 1 — most cohorts lose the majority of their customers within the first month after their initial purchase, then the decline levels off for those who stick around.
+
 **2. A third of customers never return.**
 1,505 customers (34.7%) are one-and-done — they made exactly one purchase and never came back. The remaining 2,829 (65.3%) are repeat customers.
+
+**3. Repeat customers drive almost all the revenue.**
+Repeat customers generated £8,132,096.98 (92.8% of total revenue), while one-and-done customers generated only £628,969.67 (7.2%). Retaining customers matters far more than acquiring new ones for this business.
 
 ## Recommendations
 [to be added]
