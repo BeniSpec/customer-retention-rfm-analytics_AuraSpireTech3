@@ -111,7 +111,13 @@ To view: open the `.twbx` file in Tableau Public Desktop (free) or Tableau Deskt
 Full detail in documentation/day6_findings.md.
 
 ## 9. Business recommendations
-_To be completed on Day 6._
+
+1. Focus retention effort in the first 30–60 days after a customer's first purchase, where the steepest drop-off happens.
+2. Build a win-back campaign targeted at At Risk and Hibernating customers.
+3. Protect and reward the Champions segment — a small group driving a disproportionate share of revenue.
+4. Time re-engagement offers around day 45–60 after a customer's last purchase, matching the observed median repurchase gap of 51 days.
+
+Full reasoning in documentation/day6_findings.md.
 
 ## 10. Limitations and assumptions
 
