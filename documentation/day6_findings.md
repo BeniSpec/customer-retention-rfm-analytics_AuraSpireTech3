@@ -16,6 +16,9 @@ Repeat customers generated £8,132,096.98 (92.8% of total revenue), while one-an
 **4. Most repeat customers come back within ~2 months, but a long tail takes up to a year.**
 Median time between purchases: 51 days. Average: 76.7 days (pulled up by slower repeat buyers). Breakdown: 424 customers repurchase within a week, 534 within a month, 962 within 3 months, and 909 take longer than 3 months (up to 365 days).
 
+**5. Revenue and customer value are heavily concentrated in a few segments.**
+The RFM segmentation (Day 4) shows Champions and Loyal customers hold a disproportionate share of total revenue relative to their numbers, while At Risk and Hibernating segments represent real but currently inactive value.
+
 ## Recommendations
 [to be added]
 
