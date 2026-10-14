@@ -16,4 +16,4 @@ Free, no license required, and the packaged-workbook format bundles data with th
 `retention_matrix.csv` and `rfm_segments.csv`, both exported directly from Postgres via pgAdmin's Import/Export dialog — no manual reformatting needed.
 
 ## Headline finding
-[Fill in once you've looked at the finished dashboard: which segment holds the most revenue, and roughly how steep the retention drop-off is by month 1–2.]
+Champions hold the largest share of revenue on the dashboard's segment-revenue view, consistent with the Day 4 finding. The retention curve confirms the steepest drop in active customers happens within the first month after a cohort's first purchase, after which the decline flattens for those who remain.
