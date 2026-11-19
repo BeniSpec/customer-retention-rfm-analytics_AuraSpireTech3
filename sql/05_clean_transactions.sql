@@ -7,7 +7,7 @@
 --
 -- Date parsing: to_timestamp() reads the UK format 'DD/MM/YYYY HH24:MI'
 -- directly, whether or not the day/month/hour is zero-padded, and returns
--- a real timestamp -- no string-splicing needed.
+-- a real timestamp -- no string-splicing needed. 
 DROP VIEW IF EXISTS clean_transactions;
 
 CREATE VIEW clean_transactions AS
